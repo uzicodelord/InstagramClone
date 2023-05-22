@@ -1,0 +1,391 @@
+body{
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+}
+svg {
+    margin-top: -7px;
+}
+li {
+    list-style-type: none;
+    margin-top: -50px;
+    padding-bottom: 80px;
+}
+a {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+    background-color: #565656;
+}
+li{
+    border-radius: 10px;
+}
+li:hover {
+    border-radius: 10px;
+    transition: 1s;
+}
+.logo {
+    margin-left: 30px;
+    width: 100px;
+}
+.hover {
+    border-radius: 10px;
+}
+.hover:hover {
+    background-color:  #565656;
+    transition: 0.5s ease-in;
+}
+span {
+    padding-left: 10px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card {
+    background-color: black;
+}
+.post-image {
+    max-width: 468px;
+    max-height: 584px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.hhh {
+    margin: 10px;
+}
+
+#comment-list {
+    padding: 0;
+}
+
+.card-footer .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-footer .card-body {
+    padding: 8px 16px;
+}
+
+.card-footer .card-body p {
+    margin-bottom: 0;
+}
+
+.card-footer .card-body p.text-muted {
+    font-size: 12px;
+}
+
+.comment {
+    background: #000000;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.comment:focus {
+    background: #000000;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+}
+
+.comment-button {
+    background: #000000;
+    border: none;
+    color: #007bff;
+}
+
+.comment-button:hover {
+    background: #000000;
+}
+
+.userhover:hover {
+    background: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 14px;
+}
+
+.user-info img {
+    flex-shrink: 0;
+}
+
+.custom-file-input {
+    color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'Select from computer';
+    color: #fff;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #000000, #000000);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #000000;
+    font-weight: 700;
+    font-size: 10pt;
+}
+.custom-file-input:hover::before {
+    border-color: black;
+}
+.custom-file-input:active {
+    outline: 0;
+}
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #000000, #000000);
+}
+
+.card-body > div {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card-body {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.post-image {
+    border-radius: 5px;
+}
+
+.user-profile-info {
+    display: flex;
+
+    align-items: center;
+    font-size: 20px;
+}
+
+.user-info img {
+    flex-shrink: 0;
+}
+
+.modal-comment {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal-comment.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-comment .modal-body {
+    display: flex;
+}
+
+#modal-comment .post-image-container {
+    float: left;
+    margin-right: 20px;
+}
+
+#modal-comment .other-content-container {
+    float: right;
+    flex: 1;
+}
+#modal-comment .post-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#modal-comment .modal-body > * {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.card-footer {
+    margin-top: -10px;
+    padding: -10px;
+}
+.card-body-comment {
+    padding-top: 0;
+    margin-top: -15px;
+}
+
+.border-col {
+    margin: 0;
+    padding-top: 0;
+    border-right: 2px solid #0e0e0e;
+}
+
+.unfwbutton {
+    background: #e1dede;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
+
+.unfwbutton:hover {
+    background: #fff;
+    color: #000000;
+    font-weight: bold;
+}
+
+.fwbutton {
+    background: rgb(0, 149, 246);
+    border: none;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+.iconhover:hover {
+    color: #7a7a7a;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+.profile-picture-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post-container {
+    width: 309px;
+    height: 359px;
+}
+
+.post-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-picture-post-comment {
+    width: 32px;
+    height: 32px;
+}
+
+.profile-picture-post-comment img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-picture-home {
+    width: 56px;
+    height: 56px;
+}
+
+.profile-picture-home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-picture {
+    width: 615px;
+    height: 815px;
+}
+
+.post-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-post-image {
+    width: 468px;
+    height: 468px;
+}
+
+.home-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pagination-wrapper .pagination {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.pagination-wrapper .pagination a {
+    color: white;
+}
+#search-dropdown {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}

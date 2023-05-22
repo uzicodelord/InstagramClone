@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.7",
+        "axios": "^1.4.0",
+        "bootstrap": "^5.2.3",
+        "laravel-vite-plugin": "^0.7.2",
+        "sass": "^1.56.1",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "@mdi/font": "^7.2.96",
+        "jscroll": "^2.4.1",
+        "moment": "^2.29.4"
+    },
+    "proxy": "http://localhost:8080"
+}
